@@ -1,0 +1,12 @@
+1. Used libraries should be declared outside the namespace of each class (or not at all if they are not necessary).
+2. The class 'Program' is not declared as public, as well as static void 'Main' inside it.
+3. The file which data has to be imported and printed from ("dataa.csv") does not exist in Debug\bin folder (instead of data.csv
+(additional letter in file name)).
+4. Missing if-else loop which checks if fileToImport exists and, if does not, creates the new file.
+5. The 'streamReader' was declared as a variable, not as StreamReader, inside void method, not in DataReader class.
+6. The for loop was set with int i from 0 to importedLines.Count, not to importedLines.Count - 1 ('<=' instead of '<')
+7. The bool which checks if all properties of importedObject variable are not null was not implemented.
+8. Missing if-else loop which checks if values of importedObject variable are not null.
+9. Missing loops which check if each part of importedObject variable in ImportedObjects IEnumerable are not null.
+10. The cases which check if table.ParentType and column.ParentType are not null were not declared.
+11. Missing keyword 'new' before string Name in class 'ImportedObject'.
